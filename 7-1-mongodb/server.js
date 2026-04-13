@@ -187,8 +187,7 @@
 // import mongoose
 import mongoose from "mongoose";
 // establish connection
-mongoose.connect("mongodb+srv://wajd:wajd123@cluster0.vppusy5.mongodb.net/");
-
+mongoose.connect("mongodb+srv://wajd:wajd123@cluster0.vppusy5.mongodb.net/")
 // define schema
 const studentSchema = new mongoose.Schema({
    name: String,
