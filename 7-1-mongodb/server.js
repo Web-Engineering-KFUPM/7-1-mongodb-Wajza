@@ -186,8 +186,10 @@
 
 // import mongoose
 import mongoose from "mongoose";
+import dotenv from "dotenv";
 // establish connection
-mongoose.connect("mongodb+srv://wajd:wajd123@cluster0.vppusy5.mongodb.net/")
+dotenv.config();
+mongoose.connect(process.env.MONGO_URL);
 // define schema
 const studentSchema = new mongoose.Schema({
    name: String,
